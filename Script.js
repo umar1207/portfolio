@@ -20,19 +20,19 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
-function checkScreenSize() {
-    const leftSection = document.getElementById("leftSection");
-    const rightSection = document.getElementById("rightSection");
-    const leftSection2 = document.getElementById("leftSection2");
-    const rightSection2 = document.getElementById("rightSection2");
-    if (window.innerWidth < 768) {
-        leftSection.parentNode.insertBefore(rightSection, leftSection);
-        leftSection2.parentNode.insertBefore(rightSection2, leftSection2);
-    } else {
-        leftSection.parentNode.insertBefore(leftSection, rightSection);
-        leftSection2.parentNode.insertBefore(leftSection2, rightSection2);
-    }
-}
+// function checkScreenSize() {
+//     const leftSection = document.getElementById("leftSection");
+//     const rightSection = document.getElementById("rightSection");
+//     const leftSection2 = document.getElementById("leftSection2");
+//     const rightSection2 = document.getElementById("rightSection2");
+//     if (window.innerWidth < 768) {
+//         leftSection.parentNode.insertBefore(rightSection, leftSection);
+//         leftSection2.parentNode.insertBefore(rightSection2, leftSection2);
+//     } else {
+//         leftSection.parentNode.insertBefore(leftSection, rightSection);
+//         leftSection2.parentNode.insertBefore(leftSection2, rightSection2);
+//     }
+// }
 
 
 // window.addEventListener("resize", checkScreenSize);
